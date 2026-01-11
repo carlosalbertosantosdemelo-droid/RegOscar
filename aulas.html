@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Aula</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Registrar Aula</h1>
+
+    <div>
+      <label for="classSelect">Turma:</label>
+      <select id="classSelect"></select>
+    </div>
+
+    <form id="lessonForm">
+      <label>Data:</label>
+      <input type="date" id="lessonDate" required>
+
+      <label>Conteúdo ministrado:</label>
+      <textarea id="lessonContent" required></textarea>
+
+      <label>Observações para próxima aula:</label>
+      <textarea id="lessonNotes"></textarea>
+
+      <button type="submit">Salvar Aula</button>
+    </form>
+
+    <a href="index.html" class="btn">⬅ Voltar</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
